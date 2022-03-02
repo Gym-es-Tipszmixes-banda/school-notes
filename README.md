@@ -1,4 +1,4 @@
-# networking-notes
+# school-notes
 Közös jegyzet a hálózat órákhoz.
 
 ## Hálózat 2
