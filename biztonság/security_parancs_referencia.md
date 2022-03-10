@@ -161,87 +161,99 @@ passive-interface gi0/0
 default-information originate  (az alapértelmezett útvonal terjesztése a szomszéd router-ek felé)
 ```
 
-# Eddig formáztam
-
 alapértelmezett útvonal használata (csak a határponti routeren, esetleg a külsõ hálózati routeren állítjuk be)
 
-ip route 0.0.0.0 0.0.0.0 s0/0/0		(ahol s0/0/0 az az interfész, amelyen a külsõ hálózat irányába elhagyják a csomagok a határponti router-t)
+`ip route 0.0.0.0 0.0.0.0 s0/0/0`		(ahol s0/0/0 az az interfész, amelyen a külsõ hálózat irányába elhagyják a csomagok a határponti router-t)
 
 OSPF irányító protokol MD5 hitelesítéssel, beállítás (csak a különbségek kerülnek leírásra!)
--ospf konfigurációjában beállítjuk
--egymás felé nézõ interfészeken beállítjuk
+- ospf konfigurációjában beállítjuk
+- egymás felé nézõ interfészeken beállítjuk
 
+```
 router ospf 1
 area 0 authentication message-digest
+```
 
+```
 int s0/0/0
 ip ospf message-digest-key 1 md5 cisco12345	(md5 hitelesítés, a jelszó cisco12345)
-
+```
 
 AAA beállítása helyi felhasználó esetén
 
+```
 username cisco secret cisco12345
 aaa new-model
 aaa authentication login default local
+```
 
 vagy
 
+```
 username cisco sercret cisco12345
 aaa new-model
 aaa authentication login default local-case
-
+```
 
 ACL-ek használata (normál és kiterjesztett ACL - számozott)
 
--normál ACL, sorszáma 1-99 közötti, csak a forráscímekre szûr, helyettesítõ maszkot használ, portokra nem szûr
--a lista végén az alább tiltás mindig szerepel, ha nem is írjuk ki, pl: ha a lista sorszáma 1, akkor: access-list 1 deny any
--mindig a megfelelõ interfészhez társítjuk kimenõ (out), vagy bejövõ (in) irányba
--spec kulcsszavak: host (ha konkrét IP-t használunk), any (ha bármely címet helyettesíteni akarjuk), egyik esetben sem kell helyettesítõ maszkot írni
--a sorrend számít a lista elkészítésekor!
+- normál ACL, sorszáma 1-99 közötti, csak a forráscímekre szûr, helyettesítõ maszkot használ, portokra nem szûr
+- a lista végén az alább tiltás mindig szerepel, ha nem is írjuk ki, pl: ha a lista sorszáma 1, akkor: access-list 1 deny any
+- mindig a megfelelõ interfészhez társítjuk kimenõ (out), vagy bejövõ (in) irányba
+- spec kulcsszavak: host (ha konkrét IP-t használunk), any (ha bármely címet helyettesíteni akarjuk), egyik esetben sem kell helyettesítõ maszkot írni
+- a sorrend számít a lista elkészítésekor!
 
 pl:
 
+```
 access-list 1 permit 192.168.1.0 0.0.0.255		(a 192.168.1.0-ás hálózatból származó forgalom engedélyezése gi0/0 interfészen, bejövõ irányba)
 int gi0/0
 ip access-group 1 in
+```
 
 vagy
 
+```
 access-list 1 deny 192.168.1.0 0.0.0.255		(a 192.168.1.0-ás hálózatból származó forgalom kivételével bármely forgalom engedélyezése gi0/0 interfészen, bejövõ irányba)
 access-list 1 permit any		
 int gi0/0
 ip access-group 1 in
+```
 
 vagy
 
+```
 access-list 1 permit host 192.168.1.10	0.0.0.255	(a 192.168.1.10-es címrõl származó forgalom engedélyezése gi0/0 interfészen, kimenõ irányba)
 int gi0/0
 ip access-group 1 out
+```
 
-
--kiterjesztett ACL, sorszáma 100-199 közötti, a forráscímekre, a célcímekre és a portokra is szûr, helyettesítõ maszkot használ
--a lista végén az alább tiltás mindig szerepel, ha nem is írjuk ki, pl: ha a lista sorszáma 100, akkor: access-list 100 deny any any
--mindig a megfelelõ interfészhez társítjuk kimenõ (out), vagy bejövõ (in) irányba
--spec kulcsszavak: host (ha konkrét IP-t használunk), any (ha bármely címet helyettesíteni akarjuk), egyik esetben sem kell helyettesítõ maszkot írni
--a permitó/deny szócska után az alábbi kulcsszavak szerepelhetnek (tcp, udp, icmp, ip - az utolsó kettõnél nem konfigurálunk portot
--a sorrend számít a lista elkészítésekor!
+- kiterjesztett ACL, sorszáma 100-199 közötti, a forráscímekre, a célcímekre és a portokra is szûr, helyettesítõ maszkot használ
+- a lista végén az alább tiltás mindig szerepel, ha nem is írjuk ki, pl: ha a lista sorszáma 100, akkor: access-list 100 deny any any
+- mindig a megfelelõ interfészhez társítjuk kimenõ (out), vagy bejövõ (in) irányba
+- spec kulcsszavak: host (ha konkrét IP-t használunk), any (ha bármely címet helyettesíteni akarjuk), egyik esetben sem kell helyettesítõ maszkot írni
+- a permitó/deny szócska után az alábbi kulcsszavak szerepelhetnek (tcp, udp, icmp, ip - az utolsó kettõnél nem konfigurálunk portot
+- a sorrend számít a lista elkészítésekor!
 
 pl:
 
+```
 access-list 100 permit tcp 192.168.1.0 0.0.0.255 192.168.2.0 0.0.0.255 eq 80   (a 192.168.1.0-ból 192.168.2.0-ba forg. engedélyezése a 80-as porton gi0/0 interfészen, bejövõ irányba)
 int gi0/0
 ip access-group 1 in
-
+```
 
 Management access ACL beállítása router-en (ha azt szeretnénk, hogy csak bizonyos címekrõl lehessen rácsatlakozni - a beállítás nem teljes, csak a szükséges módosításokat adtam meg)
 
+```
 access-list 1 permit 192.168.1.0 0.0.0.255
 line vty 0 4
 access-class 1 in
-
+```
 
 IPS beállítása routeren
 
+```
 do mkdir ipsdir
 (ip ips config location flash:ipsdir retries 1)		(hol van az IPS szignatúra adatbázis)
 ip ips name iosips
@@ -251,14 +263,18 @@ retired true						(kategória tiltása)
 category ios_ips basic					(basic kategória kiválasztása)
 retired false						(kategória engedélyezése)
 ip ips notify log					(syslog engedélyezése)
+```
 
 majd hozzárendelése az interfészhez:
 
+```
 int gi0/0
 ip ips iosips out
+```
 
 ping definiálása, kifelé mehet, befelé nem
 
+```
 ip ips signature-definition
 signature 2004 0
 status
@@ -268,45 +284,50 @@ engine
 event-action produce-alert
 event-action deny-packet-inline
 event-action reset-tcp-connection
-
+```
 
 port biztonság beállítása kapcsoló interfészen
 
--tegyük a portot hozzáférés módba
--engedélyezzük a port biztonságot
--adjuk meg, hány MAC címet tanulhat meg
--adjuk meg, mi történjen a port biztonság megsérül (shutdown - a port tiltásra kerül, restrict/protect - csak a forgalom tiltott, a port nem, restrict - syslog üzenet is keletkezik)
+- tegyük a portot hozzáférés módba
+- engedélyezzük a port biztonságot
+- adjuk meg, hány MAC címet tanulhat meg
+- adjuk meg, mi történjen a port biztonság megsérül (shutdown - a port tiltásra kerül, restrict/protect - csak a forgalom tiltott, a port nem, restrict - syslog üzenet is keletkezik)
 
 pl:
 
+```
 int gi0/0
 switchport mode access
 switchport port-security
 switchport port-security maximum 1		(csak 1 MAC címet tanul meg)
 switchport port-security mac-address sticky	(dinamikusan tanulja meg a MAC címeket)
 switchport port-security violation shutdown	(ha a portbiztonság sérül, tiltja az interfészt, de nem adminisztratív módon)
-
+```
 
 kapcsoló portok tiltása (csak egy)
 
+```
 int gi0/0
 shut
+```
 
 kapcsoló portok tiltása (egyszerre több is, itt fa0/1-tõl fa0/10-ig)
 
+```
 int range fa0/1-10
 shut
-
+```
 
 Site-To-Site VPN beállítása
 
--a forgalomirányításnak mûködnie a hálózaton
--a VPN-tunnel két végpontját adó router-ek mögötti hálózatok lesznek a forgalom forrásai illetve a céljai is egyben (a két oldalon a szerepek megcserélõdnek)
--az forrás és célhálózatokat ebben az esetben ACL definiálja
--a VPN csak akkor fog mûködni megfelelõen, ha a megfelelõ router-eken az IPSEC framework ugyanúgy van paraméterezve
+- a forgalomirányításnak mûködnie a hálózaton
+- a VPN-tunnel két végpontját adó router-ek mögötti hálózatok lesznek a forgalom forrásai illetve a céljai is egyben (a két oldalon a szerepek megcserélõdnek)
+- az forrás és célhálózatokat ebben az esetben ACL definiálja
+- a VPN csak akkor fog mûködni megfelelõen, ha a megfelelõ router-eken az IPSEC framework ugyanúgy van paraméterezve
 
 Pl: (mindkét oldalon)
 
+```
 crypto isakmp policy 1						ISAKMP policy azonosítója
 encr aes 256
 authentication pre-share					(hitelesítés elõre megosztott kulccsal)
@@ -318,94 +339,102 @@ description leiras
 set peer x.x.x.x						(peer IP címe, VPN partner felénk esõ interfésze IP címe)					
 set transform-set VPN-SET 
 match address 100						(hozzáférési list azonosítójának megadása)
+```
 
 VPN engedélyezése interfészen:
 
+```
 int gi0/0
 crypto map VPN-MAP
+```
 
 ACL definiálása VPN-hez
 
+```
 access-list 100 permit ip 192.168.1.0 0.0.0.255	192.168.3.0 0.0.0.255
-
+```
 
 ASA alapszintû beállítása
 
--hacsak a feladat nem írja, jelszó nincs, csak jelszó prompt ha enable paranccsal belépünk a privilegizált módba
+- hacsak a feladat nem írja, jelszó nincs, csak jelszó prompt ha enable paranccsal belépünk a privilegizált módba
 
 
 domain név beállítása ASA-n
 
-domain-name cisco.com
+`domain-name cisco.com`
 
 
 enable jelszó beállítása ASA-n
 
-enable password cisco
-
+`enable password cisco`
 
 óra beállítása ASA-n
 
-clock set 12:23:34 jan 1 2017
-
+`clock set 12:23:34 jan 1 2017`
 
 ASA külsõ, belsõ, DMZ, stb. hálózati interfész beállítása
--nem a fizikai interfészeket címezzük, hanem a VLAN-okat
+- nem a fizikai interfészeket címezzük, hanem a VLAN-okat
 
 VLAN interfész beállítása ASA-n (belsõ)
 
+```
 int vlan 1
 nameif inside
 ip add 192.168.1.1 255.255.255.0
 security-level 100
 no shut
-
+```
 
 VLAN interfész beállítása ASA-n (külsõ)
 
+```
 int vlan 2
 nameif outside
 ip add 88.22.10.10 255.255.255.0
 security-level 0
 no shut
-
+```
 
 fizikai interfész hozzárendelése inside vagy outside interfészhez
 
+```
 int e0/1
 switchport access vlan 1
 no shut
 int e0/0
 switchport access vlan 2
 no shut
-
+```
 
 DMZ (újabb hálózat) beállítása ASA-n
 
+```
 int vlan 3
 nameif dmz
 ip add 192.168.2.0 255.255.255.0
 security-level 50
 no shut
-
+```
 
 fizikai interfész hozzárendelése dmz interfészhez
 
+```
 int e0/2
 switchport access vlan 3
 no shut
-
+```
 
 Inter-VLAN Routing beállítása router-en
--a fizikai interfészt csak bekapcsoljuk, nem adunk neki IP címet
--az alinterfészeket úgy hozzuk létre, hogy nevük utaljon az egyes VLAN-okra
--az alinterfészeket csak akkor kaphatnak IP címet, ha beállítottuk rajtuk a trunk beágyazást
--az alinterfészt nem kell külön no shutdown-al indítani, létrehozásakor már mûködik
+- a fizikai interfészt csak bekapcsoljuk, nem adunk neki IP címet
+- az alinterfészeket úgy hozzuk létre, hogy nevük utaljon az egyes VLAN-okra
+- az alinterfészeket csak akkor kaphatnak IP címet, ha beállítottuk rajtuk a trunk beágyazást
+- az alinterfészt nem kell külön no shutdown-al indítani, létrehozásakor már mûködik
 
 Pl:
 
 a router-en a köv. kell beállítani
 
+```
 int gi0/0
 no shut
 int gi0/0.10				(a 10-es VLAN-hoz tartozó alinterfész)
@@ -417,34 +446,38 @@ ip add 192.168.1.129 255.255.255.192
 int gi0/0.30				(a 30-es VLAN-hoz tartozó alinterfész)
 encapsulation dot1q 30
 ip add 192.168.1.193 255.255.255.224
-
+```
 
 VLAN interfész definiálása kapcsolón
 
+```
 int vlan 30
 ip add 192.168.1.194 255.255.255.224
 no shut
-
+```
 
 VLAN interfész átjárójának megadása kapcsolón (amennyiben szeretnénk, hogy távolról is menedzselhetõ legyen a kapcsoló)
 
-ip default-gateway 192.168.1.193
+`ip default-gateway 192.168.1.193`
 
-
+```
 kapcsoló interfész beállítása trunk módba
 int fa0/1
 (switchport trunk encapsulation dot1q - csak ha máshogy nem megy, pl. laborban 2960-as és 3560-as kapcsolók közötti használat esetén)
 switchport mode trunk
-
+```
 
 kapcsolón VLAN definiálása
 
+```
 vlan 10
 name titkarsag
-
+```
 
 kapcsoló interfész hozzárendelése VLAN-hoz
 
+```
 int fa0/1
 switchport mode access
 switchport access vlan 10
+```
