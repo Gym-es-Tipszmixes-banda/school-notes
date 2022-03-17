@@ -150,3 +150,7 @@ exit
 ```
 
 Gépekről 1-1 ping kell 100%-hoz.
+
+## 14.9.10
+
+Lusta voltam jegyzetelni, de úgysem kell beadni.
