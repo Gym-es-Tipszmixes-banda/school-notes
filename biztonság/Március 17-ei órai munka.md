@@ -128,3 +128,25 @@ Mi van ha új gépet akarunk?
 `do clear port-security all`
 
 Kész projekt fájl megtalálható mudliban `ospf alap vlan port secFile` néven.
+
+## 14.3.11
+
+### S1
+
+```
+en
+conf t
+int range f0/1-2
+switchport port-security
+switchport port-security max 1
+switchport port-security mac sticky
+switchport port-security violation restrict
+no shutdown
+exit
+int range f0/3-24,g0/1-2
+shutdown
+exit
+
+```
+
+Gépekről 1-1 ping kell 100%-hoz.
