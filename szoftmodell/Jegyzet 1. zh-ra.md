@@ -100,18 +100,20 @@ A két egyszerű modell ötvözése.
 
 ### Modellek
 
-- 🌍 Domén modell: környezetet írja le
+- 🌍 <abbr title="Ezt miért így írják? 😭">Domén</abbr> modell: környezetet írja le
 - 🗒️ Specifikációs modell: szükséges szolgáltatásokkal foglalkozik
 - 💻 Tervezési modell: a szoftvert, részeit és viselkedését írja le
 
 ### Modellezési nyelvek
 
-- [UML](#uml)
+- [<abbr title="Unified Modeling Language">UML</abbr>](#uml)
 - EXPRESS
 
 ## UML
 
 Ábrák, névvel ellátott szimbólumok, grafikus jelölések.
+
+[uml-diagrams.org](https://www.uml-diagrams.org/)
 
 ### Diagrammok
 
@@ -147,9 +149,29 @@ Osztályok, interfészek és azok kapcsolatai.
 
 #### Objektum diagram
 
+A rendszer osztályainak megfelelő konkrét példányok (objektumok) és azok
+kapcsolata.
+
+"Pillanatfelvétel" a rendszerről.
+
+![Objektum diagram elemek](objektum-diagram-elemek.png)
+
+![Objektum diagram példa](objektum-diagram-példa.png)
+
 #### Csomag diagram
 
+Csomagok / névterek és köztük lévő kapcsolatok.
+
+![Csomag diagram elemek](csomag-diagram-elemek.png)
+
+![Csomag diagram példa](csomag-diagram-példa.png)
+
 #### Összetett struktúradiagram
+
+Egymással kapcsolatban álló elemek struktúráját és kommunikáción alapuló
+valamilyen cél elérését megvalósít együttműködését írja le.
+
+![Összetett struktúradiagram elemek](összetett-struktúradiagram-elemek.png)
 
 #### Komponens diagram
 
