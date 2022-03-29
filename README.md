@@ -12,6 +12,10 @@ Közös jegyzet sulihoz.
 - [11.6.2](./hálózat2/11.6.2.md)
 - [Modules 10 - 13: L2 Security and WLANs Exam](https://itexamanswers.net/ccna-2-v7-modules-10-13-l2-security-and-wlans-exam-answers.html)
 
+## Szoftvermodellezés
+
+- [Jegyzet első ZH-ra](szoftmodell/Jegyzet%201.%20zh-ra.md)
+
 ## Vállalati gazdaságtan
 
 - [Jupyter jegyzet az első 3 feladattípusról](válgazd/Válgazd.ipynb)
