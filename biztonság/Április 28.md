@@ -1,4 +1,4 @@
-# Április 28.
+# Április 28
 
 ## Alap adatok
 
