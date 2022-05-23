@@ -16,9 +16,13 @@ Tartalomjegyzék:
     - [Mealy-modell](#mealy-modell)
     - [Moore-modell](#moore-modell)
   - [FPGA-k felépítése](#fpga-k-felépítése)
+  - [RTL leírás](#rtl-leírás)
+    - [ADD](#add)
+    - [2's komplemens képzés egy-című gépnél](#2s-komplemens-képzés-egy-című-gépnél)
+    - [SUB](#sub)
   - [Műveleti áramkörök (todo)](#műveleti-áramkörök-todo)
   - [0-3 című gépek (todo)](#0-3-című-gépek-todo)
-  - [RTL leírások (todo)](#rtl-leírások-todo)
+    - [1 című gép](#1-című-gép)
 
 ## RISC vs CISC
 
@@ -131,8 +135,70 @@ Az <abbr title="Field Programmable Gate Array">FPGA</abbr> egy <abbr title="Prog
 
 ![Spartan-3E FPGA felépítése](fpga-spartan.png)
 
+## RTL leírás
+
+Register Transfer Language
+
+### ADD
+
+```js
+// fetch
+PC         → MAR
+M[MAR]     → MBR
+MBR        → IR
+PC + I_len → PC
+
+// execute
+IR <addr>  → MAR
+M[MAR]     → MBR
+ACC + MBR  → ACC
+```
+
+### 2's komplemens képzés egy-című gépnél
+
+```js
+// fetch
+PC         → MAR
+M[MAR]     → MBR
+PC + I_len → PC
+MBR        → IR
+
+// execute
+~ACC       → ACC
+ACC + 1    → ACC
+```
+
+### SUB
+
+```js
+// fetch
+PC         → MAR
+M[MAR]     → MBR
+MBR        → IR
+PC + I_len → PC
+MBR        → IR
+
+// execute
+PC         → MAR
+PC + X_len → PC
+M[MAR]     → MBR
+MBR        → MAR
+M[MAR]     → MBR
+ACC - MBR  → ACC
+```
+
 ## Műveleti áramkörök (todo)
 
 ## 0-3 című gépek (todo)
 
-## RTL leírások (todo)
+| Címzés | Felépítés                       | Példák               | Megjegyzés   |
+| ------ | ------------------------------- | -------------------- | ------------ |
+| 0      | `[operator]`                    | `PUSH`, `POP`        |              |
+| 1      | `[op] [operand]`                | `INC`, kompl. képzés | ACC intenzív |
+| 2      | `[op] [operand1] [operand2]`    | `ADD`                |              |
+| 3      | `[op] [o1] [o2] [result]`       | `DIV`                |              |
+| 4+     | `[op] [o1] [o2] [r] [next cmd]` | -                    |              |
+
+### 1 című gép
+
+![1 című gép felépítése](1-cimu-gep.png)
