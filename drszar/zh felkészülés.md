@@ -20,8 +20,8 @@ Tartalomjegyzék:
     - [ADD](#add)
     - [2's komplemens képzés egy-című gépnél](#2s-komplemens-képzés-egy-című-gépnél)
     - [SUB](#sub)
-  - [Műveleti áramkörök (todo)](#műveleti-áramkörök-todo)
-  - [0-3 című gépek (todo)](#0-3-című-gépek-todo)
+    - [AND](#and)
+  - [0-3 című gépek](#0-3-című-gépek)
     - [1 című gép](#1-című-gép)
 
 ## RISC vs CISC
@@ -187,9 +187,22 @@ M[MAR]     → MBR
 ACC - MBR  → ACC
 ```
 
-## Műveleti áramkörök (todo)
+### AND
 
-## 0-3 című gépek (todo)
+```js
+// fetch
+PC         → MAR
+M[MAR]     → MBR
+PC + I_len → PC
+MBR        → IR
+
+// execute
+MBR        → MAR
+M[MAR]     → MBR
+MBR • ACC  → ACC
+```
+
+## 0-3 című gépek
 
 | Címzés | Felépítés                       | Példák               | Megjegyzés   |
 | ------ | ------------------------------- | -------------------- | ------------ |
