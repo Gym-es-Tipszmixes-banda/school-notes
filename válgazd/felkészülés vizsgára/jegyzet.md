@@ -9,6 +9,13 @@
   - [Vállalati működés érintettjei](#vállalati-működés-érintettjei)
   - [Vállalatelméletek](#vállalatelméletek)
   - [Vállalkozások szervezeti keretei](#vállalkozások-szervezeti-keretei)
+    - [Gazdasági társaságok](#gazdasági-társaságok)
+    - [Jogi személyiség jellemzői](#jogi-személyiség-jellemzői)
+    - [Társasági formák](#társasági-formák)
+      - [Közkereseti társaság (Kkt)](#közkereseti-társaság-kkt)
+      - [Betéti társaság (Bt)](#betéti-társaság-bt)
+      - [Korlátozott felelősségű társaság (Kft)](#korlátozott-felelősségű-társaság-kft)
+      - [Részvénytársaság (Rt)](#részvénytársaság-rt)
   - [Költségelemzés](#költségelemzés)
   - [Vállalkozások alapítása és megszűntetése](#vállalkozások-alapítása-és-megszűntetése)
   - [Fedezetszámítás](#fedezetszámítás)
@@ -65,12 +72,10 @@ Erőforrások
 
 Formák:
 
-| Megnevezés                     | Rövidítés |
-| ------------------------------ | --------- |
-| közkereseti társaság           | kkt       |
-| betéti társaság                | bt        |
-| korlátolt felelősségű társaság | kft       |
-| részvénytársaság               | rt        |
+- [Közkereseti társaság](#közkereseti-társaság-kkt)
+- [Betéti társaság](#betéti-társaság-bt)
+- [Korlátolt felelősségű társaság](#korlátozott-felelősségű-társaság-kft)
+- [Részvénytársaság](#részvénytársaság-rt)
 
 Működést befolyásoló tényezők
 
@@ -162,7 +167,75 @@ Minden olyan személy vagy csoport aki/amely befolyásolhatja a szervezet műkö
 
 ## Vállalatelméletek
 
+- Klasszikus mikroökonómiai
+- Magatartáselmélet
+- Megbízó-ügynök elmélet
+- Tranzakciós költség elmélet
+- Erőforrás-alapú elmélet
+- Érintett elmélet
+- Egyéb elméletek
+
 ## Vállalkozások szervezeti keretei
+
+### Gazdasági társaságok
+
+Olyan üzletszerű, gazdasági tevékenység folytatására létrejött személyes/vagy tőkeegyesülésre épülő szervezet, ahol a partnerek osztoznak az eredményen és a vezetés felelősségén.
+
+- önálló cégnévvel rendelkeznek
+- cégneve alatt jogokat szerezhet
+- kötelezettséget vállalhat
+- tulajdont szerezhet
+- szerződést köthet
+- pert indíthat
+
+### Jogi személyiség jellemzői
+
+- Állandó szervezetet igényel a működése, ügyintéző- és képviselő szerv(ek)re van szüksége.
+- Elkülönült vagyonnal rendelkezik: a tagok vagyonától a társaság vagyona elkülönül.
+- Önálló vagyoni felelőssége áll fenn.
+- Tartós működésre jön létre.
+- A létesítés esetén meg kell állapítani a jogi személy:
+  - nevét
+  - tevékenységi körét
+  - székhelyét
+  - képviselőjét
+
+### Társasági formák
+
+#### Közkereseti társaság (Kkt)
+
+- A társaság valamennyi tagja korlátlanul és egyetemlegesen felel a társasággal szembeni minden követelésért, teljes személyes vagyona erejéig
+- Rendszerint családi vagy kisvállalkozásokra jellemző forma
+- Fő szerve a taggyűlés, ahol mindenkinek egyenlő joga van
+- Vagyoni betét akármekkora lehet
+- Tagjai természetes és jogi személyek is lehetnek
+- Általában kis létszámú vállalkozás, a tagok közti bizalom és egyetértés nagyon fontos
+- A személyes közreműködés minden tag számára lehetséges
+- Szavazat fejenkénti (kivétel, ha a társasági szerződés másként rendelkezik)
+- Nyereségből, veszteségből való részesedésvagyonarányos
+- Üzletvezetésre valamennyi tag jogosult
+- Nincs a tagoktól elkülönült irányítási szerve
+
+#### Betéti társaság (Bt)
+
+- Társasági szerződéssel létesül, amelyben a tagok arra vállalnak kötelezettséget, hogy üzletszerű közös gazdasági tevékenységet folytatnak
+- Legalább 1 tag (beltag) felelőssége korlátlan és a többi beltaggal egyetemleges, míg legalább egy másik tag (kültag) csak a társasági szerződésben vállalt vagyoni betétje erejéig felelős a működésért
+- Vagyoni betét akármekkora lehet
+
+#### Korlátozott felelősségű társaság (Kft)
+
+- Olyan gazdasági társaság, amely meghatározott összegű törzsbetétekből álló törzstőkével indul és amelyben a tagok kötelezettsége alapvetően csak saját vagyoni hozzájárulásuk mértékéig terjed
+- Főként személyi egyesülés jellegű társaság, részvényt vagy kötvényt nem bocsát ki
+- A társaság tagjai csak a bevitt törzsbetétjük (törzstőkéhez való hozzájárulásuk) erejéig felelnek a társaság tartozásaiért, azaz csak korlátozott felelősséggel tartoznak. A törzsbetét személyenként minimum 100000Ft
+
+#### Részvénytársaság (Rt)
+
+- Jogi személyiségű társaság
+- Tisztán tőkeegyesülés jellegű társaság, ahol a tulajdonosok a társaság működéséért a részvénytulajdonukon túl semmilyen felelősséggel nem tartoznak
+- Ezekben a társaságokban valósul meg leginkább a tulajdonosi és a menedzseri funkciók szétválasztása
+- A társaság személytelen (idegen neve is ezt mutatja) a tulajdonos személye jogilag közömbös
+- A tulajdonosok bármikor felmondhatnak a menedzsmentnek, illetve részvényeik eladásával lemondhatnak tulajdonukról
+- Ebből az következik, hogy a tulajdonlás elvben bármikor megváltozhat, anélkül hogy az a működést befolyásolná
 
 ## Költségelemzés
 
