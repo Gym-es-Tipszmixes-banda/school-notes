@@ -239,6 +239,9 @@ Olyan üzletszerű, gazdasági tevékenység folytatására létrejött személy
 
 ## Költségelemzés
 
+A termelés és a szolgáltatás nyújtás érdekében az üzleti évben megszerzett és felhasznált élő (munkaerő) és holt munka (pl. anyag,
+energia, szolgáltatások értéke, értékcsökkenési leírás) pénzben kifejezett értéke.
+
 ## Vállalkozások alapítása és megszűntetése
 
 ## Fedezetszámítás
