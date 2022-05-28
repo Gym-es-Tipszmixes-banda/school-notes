@@ -242,6 +242,28 @@ Olyan üzletszerű, gazdasági tevékenység folytatására létrejött személy
 A termelés és a szolgáltatás nyújtás érdekében az üzleti évben megszerzett és felhasznált élő (munkaerő) és holt munka (pl. anyag,
 energia, szolgáltatások értéke, értékcsökkenési leírás) pénzben kifejezett értéke.
 
+- költségnemek
+  - anyagjellegű ráfordítások
+  - személyi jellegű ráfordítások
+  - értékcsökkenési leírás
+- elszámolhatóság
+  - közvetlen: anyagköltség
+  - közvetett: rezsi, igazgatás
+- megjelenések
+  - explicit költség: elszámolásokon számszakilag megjelenő költség
+  - implicit költség: nem látszik, de figyelembe kell venni
+- termelési volumennel való összefüggés
+
+| Költség típusa            | $\delta$      | Képlet     |
+| ------------------------- | ------------- | ---------- |
+| Állandó                   | 0             | $c$        |
+| Lineáris (proporcionális) | 1             | $x$        |
+| Degresszív                | (0; 1)        | $\sqrt{x}$ |
+| Progresszív               | (1; $\infty$) | $x^2$      |
+| Regresszív                | (0; 1)        | $-(x-y)^2$ |
+
+Önköltség: Egységnyi termékre, szolgáltatásra jutó költség.
+
 ## Vállalkozások alapítása és megszűntetése
 
 ## Fedezetszámítás
