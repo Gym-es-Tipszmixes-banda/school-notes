@@ -18,6 +18,12 @@
       - [Részvénytársaság (Rt)](#részvénytársaság-rt)
   - [Költségelemzés](#költségelemzés)
   - [Vállalkozások alapítása és megszűntetése](#vállalkozások-alapítása-és-megszűntetése)
+    - [Alapítás](#alapítás)
+    - [Megszűnés](#megszűnés)
+      - [Csőd](#csőd)
+      - [Felszámolás](#felszámolás)
+      - [Végelszámolás](#végelszámolás)
+      - [Kényszertörlés](#kényszertörlés)
   - [Fedezetszámítás](#fedezetszámítás)
   - [Piac](#piac)
   - [Az állam gazdasági szerepe](#az-állam-gazdasági-szerepe)
@@ -266,6 +272,8 @@ energia, szolgáltatások értéke, értékcsökkenési leírás) pénzben kifej
 
 ## Vállalkozások alapítása és megszűntetése
 
+### Alapítás
+
 Vállakozás létrejöhet újként vagy meglévő vállalkozásból.
 
 Motivációk:
@@ -278,6 +286,65 @@ Motivációk:
 - környezetből fakadó
   - 💩 elismertség hiánya munkahelyen
   - 👑 túl sok hierarchikus lépcső
+
+Alapítási kérelemhez kell
+
+- a társasági szerződést
+- a hiteles aláírási címpéldányt
+- a tevékenységhez szükséges hatósági engedélyt
+- ha ingatlan az apport akkor az ingatlan tulajdoni lapjának másolatát
+- a tagjegyzéket
+- a számlavezető pénzintézet igazolását, a pénzbeni vagyoni hozzájárulás befizetéséről
+- a felügyelőbizottsági tagok illetve a könyvvizsgáló elfogadó nyilatkozatát
+- az eljáró jogi képviselő részére adott meghatalmazás
+- székhely használatról engedély
+
+Szervezetek vállalatalapítása
+
+- 💥 fúzió
+- 💸 felvásárlás
+- 🧾 szövetkezet
+
+### Megszűnés
+
+Okok
+
+- piaci okok
+  - kereslet rosszul felmérése
+  - piacot veszít a vállalat
+- menedzsment hiba
+  - túlzott optimizmus
+  - "kreatív" könyvelés
+  - rosszul sikerült beruházások
+- külső okok
+  - válság
+
+#### Csőd
+
+Cél: A fizetésképtelen gazdálkodó szervezetek újjűszervezése.
+
+Lehet önkéntes vagy nem önkéntes és nem feltétlen jár együtt a vállalat felszámolásával.
+
+#### Felszámolás
+
+Céljai
+
+- felméri a gazdálkodó szervezet vagyoni helyzetét és a vele szembeni követeléseket - ez alapján megállapítja a felszámolás ütemtervét és az annak végrehajtásához szükséges költségeket.
+- meghatározza a felesleges munkaerő leépítéshez szükséges intézkedéseket
+- joga van az adós által kötött szerződéseket azonnali hatállyal felmondani
+- a hitelezők érdekében megtámadhatja az adós 1 éven belül kötött bizonyos szerződéseit
+- legkésőbb 2 év elteltével felszámolási zárómérleget a bevételek és kiadások alakulásáról kimutatást, záró adóbevallási és zárójelentést köteles készíteni
+
+#### Végelszámolás
+
+- amikor a gazdálkodó szervezet befejezi a tevékenységét jogutód nélkül, de fizetőképes
+- a cégbíróság teszi közzé a cégközlönyben
+
+#### Kényszertörlés
+
+- ha a cég a végelszámolást három éven belül nem fejezte be, és határidőn belül nem terjesztett elő törlése iránt szabályszerű kérelmet
+- ha a cég jogutód nélküli megszűnését előidéző ok következett be, és végelszámolási eljárás lefolytatásának nincs helye
+- ha törvényességi felügyeleti hatáskörben eljárva a céget megszűntnek nyilvánítja ha a cég a végelszámolás általános szabályaira történő áttérést nem hajtotta végre
 
 ## Fedezetszámítás
 
