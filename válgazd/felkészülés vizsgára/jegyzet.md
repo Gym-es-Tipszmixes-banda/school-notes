@@ -266,6 +266,19 @@ energia, szolgáltatások értéke, értékcsökkenési leírás) pénzben kifej
 
 ## Vállalkozások alapítása és megszűntetése
 
+Vállakozás létrejöhet újként vagy meglévő vállalkozásból.
+
+Motivációk:
+
+- egyéni
+  - 💸 pénz
+  - 🎨 alkotás kényszer
+  - 👤 függetlenség
+  - 👑 hatalomvágy
+- környezetből fakadó
+  - 💩 elismertség hiánya munkahelyen
+  - 👑 túl sok hierarchikus lépcső
+
 ## Fedezetszámítás
 
 ## Piac
