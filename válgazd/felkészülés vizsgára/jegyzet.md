@@ -25,12 +25,13 @@
       - [Végelszámolás](#végelszámolás)
       - [Kényszertörlés](#kényszertörlés)
   - [Fedezetszámítás](#fedezetszámítás)
+  - [Értékcsökkenés](#értékcsökkenés)
   - [Piac](#piac)
   - [Az állam gazdasági szerepe](#az-állam-gazdasági-szerepe)
-  - [Értékcsökkenés](#értékcsökkenés)
-  - [Az állam gazdasági szerepe (monetáris politika)](#az-állam-gazdasági-szerepe-monetáris-politika)
-  - [Munkaerő, mint termelési tényező](#munkaerő-mint-termelési-tényező)
-  - [Munkaerő szerepe a vállalatok gazdálkodásában](#munkaerő-szerepe-a-vállalatok-gazdálkodásában)
+    - [Fiskális politika](#fiskális-politika)
+    - [Monetáris politika](#monetáris-politika)
+  - [Munkaerő](#munkaerő)
+    - [Munkaerő szerepe a vállalatok gazdálkodásában](#munkaerő-szerepe-a-vállalatok-gazdálkodásában)
   - [Marketing](#marketing)
   - [Innováció](#innováció)
   - [Logisztika](#logisztika)
@@ -348,17 +349,176 @@ Céljai
 
 ## Fedezetszámítás
 
-## Piac
-
-## Az állam gazdasági szerepe
+[Gyakorlat](./gyakorlat.md)
 
 ## Értékcsökkenés
 
-## Az állam gazdasági szerepe (monetáris politika)
+[Gyakorlat](./gyakorlat.md)
 
-## Munkaerő, mint termelési tényező
+## Piac
 
-## Munkaerő szerepe a vállalatok gazdálkodásában
+Egy termék vagy szolgáltatás tényleges és potenciális vevőinek és eladóinak összessége, akik csere céljából kerülnek egymással kapcsolatba. A piac végső soron a cserék összessége, a realizálás színtere.
+
+Szereplők
+
+- vevők
+- eladók
+- (állam)
+
+Piaci formák
+
+| Kínálat \ Kereslet | Sok                 | Kevés                       | Egyetlen                     |
+| ------------------ | ------------------- | --------------------------- | ---------------------------- |
+| Sok                | Tökéletes verseny   | Oligopolkereslet            | Monopolkereslet              |
+| Kevés              | Korlátozott kínálat | Kétoldalú oligopólium       | Korlátozott keresleti monop. |
+| Egyetlen           | Monopolkínálat      | Korlátozott kínálati monop. | Kétoldalú monopólium         |
+
+Nyomásos piac
+
+- A kínálat rendszeresen és tartósan meghaladja a keresletet
+- Vevői piac. Az eladónak kell engedményeket tennie. Ez intenzívebb reklámtevékenységet jelent
+- Minél tökéletesebben ki kell szolgálni a vevőt: pontosan és jó (kiváló) minőségben szállít
+- Árengedményeket, és részletfizetési kedvezményt ad
+- Új termékekkel és szolgáltatásokkal jelenik meg
+- Fontos az innováció
+- A fejlett piacgazdaságokra jellemző leginkább
+
+Szívásos piac
+
+- Ezek a hiánypiacok
+- A kereslet lényegesen és tartósan meghaladja a kínálatot
+- Eladói piac. Az eladók „válogathatnak” a vevők között
+- Költségemelkedést áthárít(hat)ják a vevőkre
+- Nem lényeges a minőség, nem törődnek a választékkal és annak bővítésével. Az innovációkban, termékmegújításokban lassúbbak
+- Hosszú szállítási időket vállalnak. Egyes megrendeléseket visszautasítanak, ütemtelenek a teljesítések
+- A vevők kénytelenek várakozni, emelkedő inputárakat elviselni
+- A tervutasításos gazdaságokra jellemző
+
+- Belépési korlátok
+  - Állami szabályok, előírások (pl.: Természetvédelmi területen folyó termesztés tilalma, egészségügyi előírások, stb.)
+  - Tőkehiány (kezdeti, méret-gazdaságossági, termékdifferenciálási)
+  - Partnerválasztási nehézségek, költségek
+  - Új elosztási csatornákba való bejutás nehézségei
+  - Földrajzi elhelyezkedés (a kedvező lelőhelyek már foglaltak)
+  - Licenc, know-how megszerzésének nehézségei
+  - A piacon lévők már túl vannak a tanulási folyamaton, azaz kisebb költséggel dolgoznak
+  - Szubjektív okok: a versenytársak agresszív fellépése az esetleges belépőkkel szemben (lásd: agresszív szabályozás)
+- Kilépési korlátok
+  - A tárgyi eszközök struktúrája (pl.: adott géppark nem alkalmas más tevékenységre, stb.)
+  - A munkaerő konvertálhatóságának nehézségei, illetve egy minőségi csere költségei (átképzés időigényes, esetleg drága)
+  - Az idegen tőke törlesztésének nehézségei egy esetleges piaci kilépés után (nincs miből fizetni a felvett hiteleket)
+  - Érzelmi korlát (családi hagyományok)
+  - Esetleg lehet jogi korlát is! (pl.: művelési ág változtatása)
+
+Verseny
+
+A szereplők egymással szembeni, előnyszerzésre irányuló, adott szabályok között zajló tevékenysége.
+
+- jóléti funkció: mindenki azt veszi, ami a legjobb neki
+- allokációs funkció: a termelőket az erőforrások jobb kihasználására kényszeríti
+- hatékonysági funkció: legkisebb ráfordítással legjobb termelésre ösztönöz
+
+## Az állam gazdasági szerepe
+
+Feladatok
+
+- Stabilizálás
+  - gazdaság működőképességének fenntartása
+  - közintézmények fenntartása
+  - pénzügyi szabályozás
+  - társadalmi rend fenntartása
+  - állampolgári jogok biztosítása
+    - élet
+    - tulajdon
+    - munka
+- Elosztás
+  - társadalmi működés és fejlődés biztosítása
+  - méltányossági juttatások a rászorulóknak
+- Külső védelem
+  - hadsereg
+
+Államháztartás
+
+A központi és a helyi kormányzat bevételeit és kiadásait tartalmazó mérleg, illetve az ezekre vonatkozó szabályrendszer.
+
+- Kiadások
+  - Állami működési funkciók
+  - Jóléti funkciók
+  - Gazdasági funkciók, támogatott gazdasági tevékenységek
+  - Államadósság kezelés
+- Bevételek
+  - Adók
+    - közvetlen: szja
+    - közvetett: áfa
+
+### Fiskális politika
+
+Költségvetési bevételek
+
+- központi adók
+  - áfa 0%, 5%, 18%, 27%
+  - társasági adó 9%
+  - szja: 15%
+- helyi adók
+  - magánszemélyek kommunális adója
+  - vállalkozók kommunális adója
+  - idegenforgalmi adó
+  - helyi iparűzési adó
+- társadalombiztosítás
+- vámok
+- állami monopoltermékek értékesítéséből származó költségvetési bevételek
+  - alkohol
+  - dohány
+  - lottó
+- illetékek, bírságok
+- állami részvények, értékpapírok
+
+### Monetáris politika
+
+- A monetáris politika intézménye a Központi Jegybank.
+- Intézkedéseit a Monetáris Tanács hozza meg.
+- A Központi Bank nincs közvetlen kapcsolatban a lakossággal és a vállalatokkal. A lakosság és a vállalatok pénzügyeit a kereskedelmi bankok kezelik. A központi bank vezeti a kereskedelmi bankok számláit és őrzi a kereskedelmi bankok kötelezően előírt pénztartalékait.
+
+## Munkaerő
+
+Klasszikus megközelítés
+
+Termelési tényezők alatt értünk minden olyan termelőeszközt, amely tartósan áll rendelkezésre, és az általuk kifejtett munka hozzájárul a javak előállításához, feldolgozásához, de maga a tényező nem szűnik meg (azonnal) létezni a termelés folyamán.
+
+- 🌍 föld
+- 💸 tőke
+- 👨‍🏭 munkaerő
+
+### Munkaerő szerepe a vállalatok gazdálkodásában
+
+Erőforrások
+
+- 👨 emberi (humán)
+- 🌳 természeti
+- ⚙️ gépi
+- 📦 anyagi
+- 💸 pénzügyi
+- 📕 információs
+
+Munkaerő-gazdálkodás tényezői
+
+- környezeti
+  - társadalmi, kulturális, politikai
+  - szociológiai
+  - általános gazdasági feltételek
+  - munkaerőpiaci helyzet
+  - jogi szabályozás
+  - szakszervezetek
+  - földrajzi helyzet
+- belső
+  - vállalat tevékenységének jellege
+  - szervezeti forma
+  - méret
+  - létszámszükséglet
+  - piaci alkalmazkodás
+  - emberi erőforrás menedzsment színvonala
+
+[Gyakorlat](./gyakorlat.md)
 
 ## Marketing
 

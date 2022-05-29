@@ -7,3 +7,5 @@ Ide majd leírok minden képletet chill.
 ## Fedezetszámítás
 
 ## Értékcsökkenés
+
+## Munkaerő
