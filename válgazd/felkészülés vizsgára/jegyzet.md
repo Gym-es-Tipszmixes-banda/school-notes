@@ -479,6 +479,8 @@ Költségvetési bevételek
 - Intézkedéseit a Monetáris Tanács hozza meg.
 - A Központi Bank nincs közvetlen kapcsolatban a lakossággal és a vállalatokkal. A lakosság és a vállalatok pénzügyeit a kereskedelmi bankok kezelik. A központi bank vezeti a kereskedelmi bankok számláit és őrzi a kereskedelmi bankok kötelezően előírt pénztartalékait.
 
+//TODO minden megvan?
+
 ## Munkaerő
 
 Klasszikus megközelítés
@@ -522,7 +524,43 @@ Munkaerő-gazdálkodás tényezői
 
 ## Marketing
 
+> Milyen igényeket tudunk másoknál jobban kielégíteni?
+
+A vállalat fogyasztóorientáltságát fejezi ki, tartalma a vállalat piaci kapcsolatait fejlesztő és megvalósító funkciók betöltése.
+
+Ahhoz, hogy sikeres marketingpolitikát alakítsunk ki, meg kell ismernünk a fogyasztók különböző csoportjainak vevői magatartását, ill. az azt befolyásoló tényezőket.
+
+A kielégítendő fogyasztói szükségletet három lépésben határozzuk meg:
+
+1. piac szegmentálása
+   - szempontok egyéni fogyasztók esetén
+     - termélorientált szegmentálás
+     - demográciai szempontok
+     - társadalmi tényezők
+     - személyiségre jellemző szempontok
+     - földrajzi tényezők
+   - szempontok termelési eszközök esetén
+     - termék jellege
+     - vásárló szervezet jellege
+     - szervezet jellemzői
+     - beszerzés helyzete
+2. célpiac kiválasztása
+   - szegmentum mértékében
+   - növekedési esélyben
+   - kedvező versenyhelyzetben
+   - hosszú távú célok megfelelésében
+   - felhasználható források bőségében
+3. pozícionálás
+
+//TODO befejezés
+
 ## Innováció
+
+Fogyasztói igények új, magasabb szintű kielégítése.
+
+- új termék
+- új technológia
+- új szervezeti kapcsolatrendszer
 
 ## Logisztika
 
