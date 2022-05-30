@@ -562,7 +562,39 @@ Fogyasztói igények új, magasabb szintű kielégítése.
 - új technológia
 - új szervezeti kapcsolatrendszer
 
+Jelleg és indíttatás
+
+- folyamator megújulás - porter
+- stratégiai újdonság - kotler
+
+A sikeres innovációs stratégia
+
+- Az információs rendszer hatékonysága
+- A minőség középpontba helyezése
+- Az innovációs tevékenység sebessége
+- Kooperáció
+- Növekvő figyelem az externáliákra
+- A kiszállás lehetősége
+
 ## Logisztika
+
+Az a vállalati tevékenység, amely biztosítja, hogy az üzleti folyamatok zavartalan lebonyolításához szükséges termékek a megfelelő helyen és időpontban, a szükségletnek megfelelő mennyiségben, minőségben és választékban rendelkezésre álljanak.
+
+A logisztikai rendszer részei
+
+- 🚚 beszerzési
+- ⚙ termelési
+- 💸 marketing
+
+A rendszer működésének értékelése
+
+- ⭐ általa nyújtott szolgáltatás színvonala
+  - rendelkezésre állás
+  - kiszolgálási idő
+  - kiszolgálás minősége
+- 💸 működés költségei
+  - adminisztratív (irányítási) költség: készletezés, beszerzés, értékesítés
+  - fizikai megvalósítás költsége: szállítás, tárolás, anyagmozgatás, csomagolás
 
 ## Erőforrás felhasználás optimalizásása
 
