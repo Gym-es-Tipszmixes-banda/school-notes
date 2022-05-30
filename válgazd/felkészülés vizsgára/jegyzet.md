@@ -598,7 +598,65 @@ A rendszer működésének értékelése
 
 ## Erőforrás felhasználás optimalizásása
 
+A termelőeszközök kapacitása tárgyalásakor is megjelent mar az a probléma, hogy a rendelkezésre álló gépi kapacitások kiegyensúlyozatlanok a termelési (értékesítési) feladatok végrehajtása szempontjából.
+
+A termelési feladat teljesíthetőséget azonban nem csak a termelőeszközök kapacitás-egyensúlytalansága, hanem mas igenybeveendő erőforras (pl. a munkaerő) szűkössége is akadályozhatja.
+
+Szűk keresztmetszet
+
+Olyan erőforrás, amelynek kapacitása egyenlő az iránta megnyilvánuló igénnyel vagy kisebb annál.
+
+[Gyakorlat](gyakorlat.md)
+
 ## Beruházások
+
+A tárgyi eszköz beszerzését, létesítését, saját vállalkozásban történő előállítását, beszerzett tárgyi eszköz üzembe helyezését, rendeltetésszerű használatbavétele érdekében az üzembe helyezéséig, a rendeltetésszerű használatba vételig végzett tevékenységét értjük.
+
+Célok
+
+- 📈 bevétel növelése
+- 📉 költségek csökkentése
+- ⚖ jogszabályoknak, hatósági előírásoknak való megfelelés
+
+Csoportosítás
+
+- tárgya / célja szerint
+  - ingatlan
+  - gépi
+  - komplex
+- kivitelező szerint
+  - saját vállalkozásban
+  - vállalkozásba aditt (idegen kivitelezésű)
+  - vegyes
+- finanszírozás szerint
+  - saját erőből végzett
+  - idegen forrásból megvalósított
+  - vegyes finanszírozású
+- tárgyi eszköz-állomány változására gyakorolt hatás szerint
+  - nemzetgazdasági beruházás
+    - országos szinten új beruházás,
+    - összgazdasági szinten bővül a tárgyi eszközállomány,
+    - például új épület építése,
+  - üzemgazdasági beruházás
+    - a vállalkozás tárgyi eszköz-állománya változik,
+    - összgazdasági szinten a tárgyi eszköz-állomány változatlan,
+    - például: épület megvásárlása
+- termelőképesség szerint
+  - nem-termelő (improduktív) beruházások
+  - termelő (produktív) beruházások
+
+Hatékonyság és hatékonysági mutatók
+
+- nem diszkontálható / statikus
+  - megtérülési idő
+  - -forgó
+  - -ráta
+- diszkontálható / dinamukus
+  - nettó jelenérték (NPV)
+  - belső megtérülési ráta (IRR)
+  - jövedelmezőségi index (PI)
+
+[Gyakorlat](gyakorlat.md)
 
 ## Versenyképesség és gazdasági hatekonyság mérése
 
