@@ -63,9 +63,11 @@ A családi kedvezményt érvényesítő magánszemély az összevont adóalapjá
 
 A családi kedvezmény - az eltartottak lélekszámától függően - kedvezményezett eltartottanként és jogosultsági hónaponként
 
-- a) egy eltartott esetén 66 670 forint,
-- b) Két eltartott esetén 133 330 forint fejenként
-- c) három és minden további eltartott esetén 220 000 forint fejenként.
+| Gyerekek | Kedvezmény |
+| -------- | ---------- |
+| 1        | 66670      |
+| 2        | 133330     |
+| 3+       | 220000     |
 
 A családi kedvezmény érvényesítésére jogosult az a magánszemély, aki gyermekre tekintettel családi pótlékra jogosult, a várandós nő és a vele közös háztartásban élő házastársa.
 
