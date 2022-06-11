@@ -31,7 +31,7 @@ Tartalomjegyzék:
 RISC
 
 - Reduced Instruction Set Computer
-- Tökéletes 1 feladatfa, nincs fölösleges funkció
+- Tökéletes 1 feladatra, nincs fölösleges funkció
 - Hatékonyan használja a pipe-line elvet
 - Motorola 88000
 - Berkeley
