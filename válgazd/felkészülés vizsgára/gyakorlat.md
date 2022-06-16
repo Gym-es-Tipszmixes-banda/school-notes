@@ -13,7 +13,7 @@
     - [Családi kedvezmény](#családi-kedvezmény)
     - [A családi járulékkedvezmény](#a-családi-járulékkedvezmény)
   - [Erőforrás-felhasználás optimalizálás](#erőforrás-felhasználás-optimalizálás)
-  - [Befektetése értékelése](#befektetése-értékelése)
+  - [Befektetések értékelése](#befektetések-értékelése)
     - [Statikus módszerek](#statikus-módszerek)
     - [Dinamikus módszerek](#dinamikus-módszerek)
   - [Jövedelmezőségi mutatók](#jövedelmezőségi-mutatók)
@@ -79,7 +79,7 @@ A családi járulékkedvezmény összege a biztosítottat megillető családi ke
 
 ## Erőforrás-felhasználás optimalizálás
 
-## Befektetése értékelése
+## Befektetések értékelése
 
 ### Statikus módszerek
 

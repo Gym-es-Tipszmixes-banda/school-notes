@@ -42,7 +42,41 @@ $mf = 134536 / 107093 = 1.26$
 | Gyerekek | Kedvezmény |
 | -------- | ---------- |
 | 1        | 66670      |
-| **2**    | **133330** |
+| 2        | 133330     |
 | 3+       | 220000     |
 
 //TODO help
+
+## Bruttó bér: 1126716  Gyerekek: 3
+
+## Bruttó bér: 234379 Gyerekek: 1
+
+## Számítsa ki a hiányzó értékeket! Nettó jelenérték, profitabilitási index
+
+| Adatok                |        |
+| --------------------- | ------ |
+| Kezdő pénzáram        | 900000 |
+| 1. éves pénzáram      | 420000 |
+| 2. éves pénzáram      | 632000 |
+| 3. éves pénzáram      | 522000 |
+| elvárt hozam          | 0.1    |
+| Nettó jelenérték      |        |
+| Profitabilitási index |        |
+
+## Alapanyagszükséglet: 116967, egyenletesen fogy a készlet, rendelési költség: 181875, készletezési költség: 50250
+
+| Adatok                      | A     | B    | Összesen | Alap                                   |
+| --------------------------- | ----- | ---- | -------- | -------------------------------------- |
+| Közvetlen anyagköltség      | 5000  | 4000 | 9000     |                                        |
+| Közvetlen bérköltség        | 8470  | 3630 |          |                                        |
+| Egyéb közvetlen költség     | 2530  | 1370 |          |                                        |
+| Összes közvetlen költésg    | 16000 | 9000 |          |                                        |
+|                             |       |      |          |                                        |
+| Üzemi általános költség     |       |      | 4500     | Termékenkénti anyagköltség             |
+| Szűkített költség           |       |      |          |                                        |
+| Vállalati általános költség |       |      |          | Termékenkénti összes közvetlen költség |
+| Teljes költség              |       |      |          |                                        |
+| Gyártási darabszám          | 185   | 191  |          |                                        |
+| Teljes önköltség            |       |      |          |                                        |
+| Szűkített önköltség         |       |      |          |                                        |
+|                             |       |      |          |                                        |
